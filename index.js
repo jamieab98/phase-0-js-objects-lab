@@ -18,27 +18,25 @@ logTicketPrice(attendee)
 
 function updateTicketType(attendee, newType){
   attendee.ticketType = newType;
-  console.log(attendee.ticketType);
 }
 updateTicketType(attendee, "General")
 
 function updateTicketPrice(attendee, newPrice){
   attendee.ticketPrice = newPrice;
-  console.log(attendee.ticketPrice);
 }
 updateTicketPrice(attendee, 75.00)
 
 function removeEventProperty(attendee){
   delete attendee.event;
-  console.log(attendee);
 }
 removeEventProperty(attendee)
 
 function addCheckedInProperty(attendee){
   attendee.checkedIn = true;
-  console.log(attendee);
 }
 addCheckedInProperty(attendee)
+
+console.log(attendee)
 
 //Needed for the tests to work. Don't modify
 module.exports = {
